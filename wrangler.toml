@@ -1,0 +1,22 @@
+name = "miraclemods-stripe-worker"
+main = "src/index.js"
+compatibility_date = "2024-01-01"
+
+# Workers Logs
+[observability]
+enabled = true
+
+# Bind Environment Variables (set these in Cloudflare Dashboard)
+# [vars]
+# ENVIRONMENT = "production"
+
+# Environment-specific configuration
+[env.production]
+vars = { ENVIRONMENT = "production" }
+
+# Add your environment variables in Cloudflare Dashboard:
+# - STRIPE_SECRET_KEY (your Stripe secret key)
+# - STRIPE_WEBHOOK_SECRET (your Stripe webhook signing secret)
+# - WOOCOMMERCE_URL (your WooCommerce site URL, e.g., https://miraclemods.com)
+# - WOOCOMMERCE_CONSUMER_KEY (WooCommerce REST API consumer key)
+# - WOOCOMMERCE_CONSUMER_SECRET (WooCommerce REST API consumer secret)
