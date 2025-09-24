@@ -1,0 +1,23 @@
+{
+  "name": "miraclemods-stripe-worker",
+  "version": "1.0.0",
+  "description": "Stripe Checkout middleware for MiracleMods - Complete separation between WooCommerce and payment processing",
+  "main": "src/index.js",
+  "scripts": {
+    "deploy": "wrangler deploy",
+    "dev": "wrangler dev",
+    "tail": "wrangler tail"
+  },
+  "keywords": [
+    "stripe",
+    "cloudflare-workers",
+    "woocommerce",
+    "payment",
+    "miraclemods"
+  ],
+  "author": "MiracleMods",
+  "license": "MIT",
+  "devDependencies": {
+    "wrangler": "^3.0.0"
+  }
+}
